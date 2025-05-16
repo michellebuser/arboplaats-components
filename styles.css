@@ -35,10 +35,9 @@ h2 {
 }
 
 
-p {
+
+p, ul, li {
   color: var(--brand-primary-gray-800, #212327);
-  /* body/sm/regular */
-  font-family: var(--font-family-body, Inter);
   font-size: var(--font-size-4xs, 14px);
   font-style: normal;
   font-weight: 400;
@@ -88,9 +87,14 @@ a.footer {
   font-size: 12px;
 }
 
+
 strong {
   color: var(--brand-primary-gray-800, #212327);
   font-weight: 600;
 
 }
 
+.header-image {
+  display: inline-flex;
+  align-items: center;
+}
