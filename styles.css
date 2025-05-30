@@ -1,11 +1,22 @@
 body {
   font-family: Inter, sans-serif;
   background: var(--brand-primary-green-50, #F3FBE9);
+  margin-top: 64px;
   margin: 0;
-  padding: 0;
+  justify-content: center;
 }
 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+} 
+
 .email-card {
+  display: flex;
+  flex-direction: column;
   background: var(--brand-UI-white, #FFF);
   max-width: 720px;
   margin: 32px auto;
@@ -16,24 +27,37 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 32px;
+  padding-bottom: 16px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   padding: 32px;
+  padding-top: 16px;
 }
 
 h1 {
   font-size: 1.25rem;
   color: var(--brand-primary-gray-800, #212327);
+  display: flex;
 }
 
 h2 {
   font-size: 1.125rem;
   color: var(--brand-primary-gray-800, #212327);
+  display: flex;
 }
 
+h4 {
+  color: var(--brand-primary-gray-800, #212327);
+  font-family: var(--font-family-body, Inter);
+  font-size: var(--font-size-3xs, 16px);
+  font-weight: 600;
+  line-height: var(--font-size-sm, 24px); /* 150% */
+  margin: 0;
+
+}
 
 
 p, ul, li {
@@ -48,23 +72,37 @@ a {
   color: var(--brand-primary-blue-500, #1F849B);
 }
 
-.button {
+section {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.button-primary {
   display: inline-block;
-  padding: 14px 20px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding: .625rem 1rem;
   border: 1px solid rgba(33, 35, 39, 0.06);
   background: var(--brand-primary-green-300, #9FD356);
   color: var(--brand-primary-gray-800, #212327);
   text-decoration: none;
   border-radius: 6px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   box-shadow: 0px 1px 2px 0px rgba(31, 33, 37, 0.06);
+
 }
 
 .button:hover {
   background: var(--brand-primary-green-400, #7AB52E);
 }
+
+.actions-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
 
 .footer {
   display: flex;
@@ -74,7 +112,7 @@ a {
   padding: 32px;
 }
 
-a.unsubscribe {
+a.unsubscribe, a.change-preferences {
   text-decoration: none;
 }
 
@@ -87,6 +125,20 @@ a.footer {
   font-size: 12px;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  align-items: center; 
+  font-size: 12px;
+  gap: 12px; 
+  font-weight: 500;
+  line-height: var(--font-size-2xs, 18px);
+  margin-bottom: 12px;
+}
+
+.footer-links:hover {
+}
 
 strong {
   color: var(--brand-primary-gray-800, #212327);
@@ -98,3 +150,6 @@ strong {
   display: inline-flex;
   align-items: center;
 }
+
+
+
