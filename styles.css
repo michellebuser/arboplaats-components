@@ -82,7 +82,7 @@ section {
   display: inline-block;
   padding: .625rem 1rem;
   border: 1px solid rgba(33, 35, 39, 0.06);
-  background: var(--colors-brand-green-300, #B5DF77);
+  background: var(--colors-brand-green-400, #98CF4C);
   color: var(--colors-text-primary-900, #27272F);
   text-decoration: none;
   border-radius: 6px;
@@ -93,7 +93,7 @@ section {
 }
 
 .button:hover {
-  background: var(--colors-brand-green-400, #98CF4C);
+  background: var(--colors-brand-green-500, #7AB52E);
 }
 
 .actions-sm {
@@ -108,7 +108,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: var(--colors-brand-blue-800, #245666);
+  background: var(--colors-brand-blue-950, #112F3B);
   padding: 32px;
 }
 
